@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jothi's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Portfolio</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+}
+
+
+html{
+scroll-behavior:smooth;
+scrol-padding-top:80px;
+}
+
+#fixed{
+position:fixed;
+background-color:black;
+height:120px;
+width:100%;
+padding:20px;
+top:0;
+}
+
+
+#headersec {
+    background: #333;
+    color: #fff;
+    margin:0;
+    text-align: center;
+    height:70vh;
+    width:100vw;
+    padding-top:300px;
+    top:0
+}
+
+nav ul {
+    list-style: none;
+    padding: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#about{
+color:#fff;
+padding-top:200px;
+margin:20px;
+paading-left:10px;
+
+}
+
+
+#pic{
+width:110px;
+height:130px;
+border-radius:100%;
+}
+
+.tribute{
+height:70vh;
+}
+
+#font{
+font-size:70px;
+text-align:center;
+}
+
+h2{
+font-size:40px;
+}
+
+
+section {
+    
+    padding: 20px;
+    margin: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px #ccc;
+}
+
+
+
+.project {
+    background: #eee;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: white;
+    position: relative;
+}
+
+
+ .download-button {
+            background-color: #333;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 20px;
+            display: inline-block;
+            margin-top: 10px;
+            align-self: center;
+        }
+
+
+        .download-button:hover {
+            background-color: #555;
+        }
+
+
+.projectimg {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px 10px;
+}
+
+.projectimg img {
+  width: 100%;
+  max-width: 350px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.projectimg::after {
+  content: "";
+  width: 350px;
+}
+
+
+
+    </style>
+</head>
+<body>
+   <div id="headersec">
+    <header id="fixed">
+        <h1>Jothi</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+     <div id="#about">
+<div>
+       <h2><img id="pic" src="D:\templates\profile.jpg" alt="profile picture">
+         
+        I'M JOTHI KUMARI</h2></div>
+</div>
+        <h3>I'm a passionate web developer with a strong foundation in HTML, CSS, JavaScript, React.js, and MySQL.<br> Currently pursuing my BCA (2nd year), I have also completed a diploma in programming tools<br> and actively enhance my skills through FreeCodeCamp and LeetCode.
+         </h3>
+    </div>
+    </div>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React.js</li>
+            <li>C,C++</li>
+            <li>Python</li>
+            <li>JAVA</li>
+            <li>MYSQL</li>
+            
+
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+            <div class="projectimg">
+            
+            <img src="D:\templates\tributepageportfolio.jpg" alt="tribute page">
+           
+            <img src="D:\templates\technicalportfolio.jpg" alt="technical document">
+
+            <img src="D:\templates\product.jpg" alt="product">
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: kumarijothi60@gmail.com</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/jothi-kumari-r-6a37b9288?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">linkedin.com/in/jothikumari</a></p>
+     <section id="resume">
+    
+        <div class="section-content">
+            <center>
+            <h2>Resume</h2>
+            <a href="D:/templates/kumarijothi60gmail.com_Resume.pdf" target="_blank" class="download-button">Download CV</a>
+        </center>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Jothi. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+    <script>
+        document.querySelectorAll('nav a').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+        const navbarHeight = document.querySelector('header').offsetHeight;
+
+        window.scrollTo({
+            top: targetElement.offsetTop - navbarHeight,
+            behavior: 'smooth'
+        });
+    });
+});
+    </script>
+</body>
+</html>
